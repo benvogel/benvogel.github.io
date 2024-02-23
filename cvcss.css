@@ -1,0 +1,26 @@
+
+div:not(.container){background-color: rgb(105, 211, 243);
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+@media screen and (min-width:500px){
+    .container{display:grid;
+        grid-template-areas: "header header header"
+         "exp exp educ" 
+         "langue skills skills";
+        grid-template-columns: 30% 30% 40%;
+        height: 100vh;}
+    
+    #header{grid-area: header;}
+
+    #exp{grid-area: exp;}
+
+    #edu{grid-area: educ;}
+
+    #lang{grid-area: langue;}
+
+    #skills{grid-area: skills;}
+}
